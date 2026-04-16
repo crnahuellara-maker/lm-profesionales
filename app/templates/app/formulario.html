@@ -12,18 +12,4 @@
 
 <p><a href="/">Volver al inicio</a></p>
 
-{% endblock %}{% extends "app/base.html" %}
-
-{% block contenido %}
-
-<h2>Formulario</h2>
-
-<form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Guardar</button>
-</form>
-
-<p><a href="/">Volver al inicio</a></p>
-
 {% endblock %}
